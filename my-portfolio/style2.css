@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+section a:hover {
+  background-color: #ba9cde;
+  color: #242324;
+}
+
+.main-header li a:hover {
+  color: #0dd8c3;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #0dd8c4be;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #666666;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #0dd8c3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ba9cde;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+/* nav */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: minmax(80px, auto);
+
+  padding: 0 1rem;
+
+  align-items: center;
+
+  background-color: #242324;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.main-nav ul {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+.main-nav li {
+  padding: 0.25rem 0.5rem;
+  border: solid 1px #ba9cde;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 0px 10px;
+}
+
+/* end of nav */
+
+section {
+  padding: 40px 30%;
+  box-shadow: 0px 5px 5px 0px #00000080;
+}
+
+.hero {
+  background-color: #242324;
+  padding: 50px 30%;
+}
+
+.about-me {
+  background-color: #454445;
+}
+
+.portfolio {
+  background-color: #242324;
+  padding: 50px 10%;
+  /* margin: auto; */
+}
+
+.portfolio div {
+  display: inline-block;
+  background-color: #181718;
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  border: solid 1px #0dd8c3;
+  box-shadow: 2px 2px 6px 0px #00000080;
+  margin: 0px 10px;
+}
+
+.portfolio .button {
+  color: white;
+  border: solid 1px #ba9cde;
+  padding: 10px 0px;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.portfolio .gitlink {
+  color: #0dd8c3;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+
+.experience {
+  background-color: #454445;
+}
+
+.quotebutt {
+  color: rgb(0, 0, 0);
+  background-color: #0dd8c3;
+  padding: 10px 0px;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #242324;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  padding: 10px;
+}
+
+.about-me ul {
+  column-count: 2;
+  line-height: 1.5rem;
+}
+
+.btt img {
+  width: 40px;
+}
+
+.btt {
+  display: grid;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+
+  padding: 5px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  font-size: 10px;
+  margin: auto;
+  place-items: center;
+}
